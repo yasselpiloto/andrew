@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+    
+    <Button android:id="@+id/accept"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept" 
+        android:layout_below="@id/entry"
+        android:layout_alignParentRight="true"/>
+    
+    <Button android:id="@+id/cancel"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_toLeftOf="@id/accept" 
+        android:layout_alignTop="@id/accept" />
+    
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/gridview"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:columnWidth="90dp"
+	    android:numColumns="auto_fit"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center"
+	/>
+
+</RelativeLayout>
